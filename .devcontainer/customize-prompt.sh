@@ -6,4 +6,5 @@ RESET="\[\033[00m\]"
 
 # Customize the PS1 (Prompt String 1)
 # This example shows: [user@codespace] [directory] (branch)
-export PS1="${GREEN}\u@\h${RESET}:${BLUE}\w${RESET}\$ "
+# export PS1="${GREEN}\u@\h${RESET}:${BLUE}\w${RESET}\$ "
+export PS1="${GREEN}\w \$ ${RESET}"
