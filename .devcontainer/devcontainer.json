@@ -200,9 +200,12 @@
                 "workbench.welcomePage.walkthroughs.openOnInstall": false
             },
             "extensions": [
-                "ritwickdey.LiveServer"
+                "ritwickdey.LiveServer",
+                "cs50.extension-uninstaller"
+
             ]
         }
     }
 
 }
+
