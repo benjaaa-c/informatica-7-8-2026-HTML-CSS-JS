@@ -1,46 +1,8 @@
 {
-    "build": {
-        "args": {
-            "TAG": "${localEnv:TAG}",
-            "VCS_REF": "${localEnv:VCS_REF}"
-        },
-        "context": ".",
-        "dockerfile": "Dockerfile"
-    },
+    "name": "Informatica 7-8 Codespaces Setup",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
     "customizations": {
         "vscode": {
-            "extensions": [
-                "/opt/cs50/extensions/explain50-1.0.0.vsix",
-                "/opt/cs50/extensions/cs50-0.0.1.vsix",
-                "/opt/cs50/extensions/design50-1.0.0.vsix",
-                "/opt/cs50/extensions/ddb50-2.0.0.vsix",
-                "/opt/cs50/extensions/phpliteadmin-0.0.1.vsix",
-                "/opt/cs50/extensions/style50-0.0.1.vsix",
-                "cs50.extension-uninstaller",
-                "inferrinizzard.prettier-sql-vscode",
-                "mathematic.vscode-pdf",
-                "ms-azuretools.vscode-docker",
-                "ms-ceintl.vscode-language-pack-cs",
-                "ms-ceintl.vscode-language-pack-de",
-                "ms-ceintl.vscode-language-pack-es",
-                "ms-ceintl.vscode-language-pack-fr",
-                "ms-ceintl.vscode-language-pack-it",
-                "ms-ceintl.vscode-language-pack-ja",
-                "ms-ceintl.vscode-language-pack-ko",
-                "ms-ceintl.vscode-language-pack-pl",
-                "ms-ceintl.vscode-language-pack-pt-br",
-                "ms-ceintl.vscode-language-pack-ru",
-                "ms-ceintl.vscode-language-pack-zh-hans",
-                "ms-ceintl.vscode-language-pack-zh-hant",
-                "ms-python.autopep8",
-                "ms-python.python",
-                "ms-vscode.cpptools",
-                "ms-vscode.hexeditor",
-                "ms-vsliveshare.vsliveshare",
-                "redhat.java",
-                "vscjava.vscode-java-debug",
-                "vsls-contrib.gitdoc"
-            ],
             "settings": {
                 "accessibility.signals.terminalBell": {
                     "sound": "on"
@@ -243,30 +205,32 @@
                 "workbench.statusBar.visible": false,
                 "workbench.tips.enabled": false,
                 "workbench.welcomePage.walkthroughs.openOnInstall": false
-            }
+            },
+            "extensions": [
+                "inferrinizzard.prettier-sql-vscode",
+                "mathematic.vscode-pdf",
+                "ms-azuretools.vscode-docker",
+                "ms-ceintl.vscode-language-pack-cs",
+                "ms-ceintl.vscode-language-pack-de",
+                "ms-ceintl.vscode-language-pack-es",
+                "ms-ceintl.vscode-language-pack-fr",
+                "ms-ceintl.vscode-language-pack-it",
+                "ms-ceintl.vscode-language-pack-ja",
+                "ms-ceintl.vscode-language-pack-ko",
+                "ms-ceintl.vscode-language-pack-pl",
+                "ms-ceintl.vscode-language-pack-pt-br",
+                "ms-ceintl.vscode-language-pack-ru",
+                "ms-ceintl.vscode-language-pack-zh-hans",
+                "ms-ceintl.vscode-language-pack-zh-hant",
+                "ms-python.autopep8",
+                "ms-python.python",
+                "ms-vscode.cpptools",
+                "ms-vscode.hexeditor",
+                "ms-vsliveshare.vsliveshare",
+                "redhat.java",
+                "vscjava.vscode-java-debug",
+                "vsls-contrib.gitdoc"
+            ]
         }
-    },
-    "forwardPorts": [
-        5000, /* Flask */
-        5900, /* VNC server */
-        6081, /* VNC client */
-        8080, /* http-server */
-        8082, /* phpLiteAdmin */
-        8787  /* RStudio */
-    ],
-    "mounts": [
-        {
-            "source": "/var/run/docker.sock",
-            "target": "/var/run/docker-host.sock", /* https://github.com/devcontainers/features/blob/main/src/docker-outside-of-docker/devcontainer-feature.json */
-            "type": "bind"
-        }
-    ],
-    "postCreateCommand": "/opt/cs50/bin/postCreateCommand",
-    "postStartCommand": "/opt/cs50/bin/postStartCommand",
-    "remoteEnv": {
-        "CS50_GH_USER": "${localEnv:GITHUB_USER}", /* For lib50 */
-        "LANG": "${localEnv:CS50_LANG}",
-        "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}",
-        "TZ": "${localEnv:CS50_TZ}"
     }
 }
