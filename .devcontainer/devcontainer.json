@@ -17,12 +17,6 @@
                 "C_Cpp.enhancedColorization": "enabled",
                 "C_Cpp.errorSquiggles": "disabled",
                 "C_Cpp.formatting": "clangFormat",
-                "cs50.watchPorts": [
-                    5000,
-                    8080,
-                    8082,
-                    8787
-                ],
                 "diffEditor.diffAlgorithm": "advanced",
                 "diffEditor.ignoreTrimWhitespace": false,
                 "editor.autoClosingQuotes": "never",
@@ -186,8 +180,8 @@
                         "editorWhitespace.foreground": "#1167D7",
                         "panel.background": "#fff",
                         "sideBar.background": "#fff",
-                        "terminal.foreground": "#000",
-                        "terminal.background": "#fff"
+                        "terminal.foreground": "#fff",
+                        "terminal.background": "#000"
                     }
                 },
                 "window.commandCenter": false,
@@ -197,7 +191,6 @@
                 "workbench.editor.closeOnFileDelete": true,
                 "workbench.editor.enablePreview": false,
                 "workbench.editor.labelFormat": "medium",
-                "workbench.iconTheme": "vs-minimal", /* Simplify icons */
                 "workbench.layoutControl.enabled": false,
                 "workbench.preferredDarkColorTheme": "GitHub Dark Default",
                 "workbench.preferredLightColorTheme": "GitHub Light Default",
@@ -207,30 +200,9 @@
                 "workbench.welcomePage.walkthroughs.openOnInstall": false
             },
             "extensions": [
-                "inferrinizzard.prettier-sql-vscode",
-                "mathematic.vscode-pdf",
-                "ms-azuretools.vscode-docker",
-                "ms-ceintl.vscode-language-pack-cs",
-                "ms-ceintl.vscode-language-pack-de",
-                "ms-ceintl.vscode-language-pack-es",
-                "ms-ceintl.vscode-language-pack-fr",
-                "ms-ceintl.vscode-language-pack-it",
-                "ms-ceintl.vscode-language-pack-ja",
-                "ms-ceintl.vscode-language-pack-ko",
-                "ms-ceintl.vscode-language-pack-pl",
-                "ms-ceintl.vscode-language-pack-pt-br",
-                "ms-ceintl.vscode-language-pack-ru",
-                "ms-ceintl.vscode-language-pack-zh-hans",
-                "ms-ceintl.vscode-language-pack-zh-hant",
-                "ms-python.autopep8",
-                "ms-python.python",
-                "ms-vscode.cpptools",
-                "ms-vscode.hexeditor",
-                "ms-vsliveshare.vsliveshare",
-                "redhat.java",
-                "vscjava.vscode-java-debug",
-                "vsls-contrib.gitdoc"
+                "ritwickdey.LiveServer"
             ]
         }
     }
+
 }
