@@ -1,6 +1,14 @@
 {
-    "name": "Informatica 7-8 Codespaces Setup",
+    "name": "Informatica 7-8 Web Dev Codespaces Setup",
     "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+    "forwardPorts": [
+        5000, /* Flask */
+        5900, /* VNC server */
+        6081, /* VNC client */
+        8080, /* http-server */
+        8082, /* phpLiteAdmin */
+        8787  /* RStudio */
+    ],
     "customizations": {
         "vscode": {
             "settings": {
