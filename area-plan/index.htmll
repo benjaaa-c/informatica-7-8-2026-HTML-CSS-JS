@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+     Plan de Área México 2026
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Plan de Área México 2026</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Plan</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section>
+    <h2>Introducción</h2>
+    <p>
+        This section describes the purpose of the area plan and the goals for the region.
+
+    </p>
+</section>
+
+<section>
+    <h2>Objetivos</h2>
+
+    <article>
+        <h3>Objetivo 1</h3>
+        <p>Explanation of the first goal.</p>
+    </article>
+
+    <article>
+        <h3>Objetivo 2</h3>
+        <p>Explanation of the second goal.</p>
+    </article>
+
+</section>
+
+<section>
+    <h2>Mapa</h2>
+    <img src="mexico-map.jpg" alt="Map of Mexico">
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Plan de Área México</p>
+</footer>
+</body>
+</html>
