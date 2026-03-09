@@ -1,0 +1,19 @@
+hi {
+    text-transform: uppercase;
+    color: saddlebrown
+}
+/* ID Selector */
+#status {
+    font-family: sans-serif;
+}
+
+img {
+    width:500px;
+}
+
+/*class selector*/
+.standout-box {
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    padding: 1rem;
+}
