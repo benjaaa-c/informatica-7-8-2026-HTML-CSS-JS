@@ -1,4 +1,9 @@
-hi {
+/*universal selector*/
+*{
+   color:#282828; /*dark gray*/
+}
+/*element selector*/
+h1 {
     text-transform: uppercase;
     color: saddlebrown
 }
@@ -16,4 +21,29 @@ img {
     background-color: whitesmoke;
     border-radius: 1rem;
     padding: 1rem;
+}
+
+.subtitle{
+    text-trensform:uppercase;
+    color:saddlebrown;
+    front-size:1.2rem;
+    font-weigth: bold;
+}
+
+/*group selector*/
+h1, .subtitle {
+    font-family: serif;
+}
+/*pseudo class selector*/
+a*{
+    text-decoration: none;
+    color: rgb(163, 157, 111);
+
+}
+a:hover {
+    text-decoration: underline;
+}
+main{
+    width: 600px;
+    margin: auto;
 }
