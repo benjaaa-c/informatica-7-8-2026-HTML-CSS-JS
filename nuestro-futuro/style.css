@@ -1,0 +1,42 @@
+body {
+    height:5000px;
+    margin:0;
+}
+
+main {
+    width:60%;
+    margin:70px auto 0;
+}
+
+header {
+    display:flex;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 10px 10px 10px;
+    background-color: #e7e4ff;
+}
+
+#title {
+    font-family:math;
+    font-size:28px;
+}
+#key {
+    font-family:fantasy;
+    font-size:25px;
+    margin:0 3px 0 0;
+}
+
+nav {
+    display:flex;
+    gap:15px;
+}
+
+img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
